@@ -7,9 +7,20 @@ This repo contains the PyTorch code release for our paper Generative Bias for Ro
 > <br>KAIST, Hanyang University<br>
 
 
+### Prerequisites
+
+Please make sure you are using a NVIDIA GPU with Python==3.7.1 and about 100 GB of disk space.
+
+Install all requirements with ``pip install -r requirements.txt``
 
 
 
+## Acknowledgements
+We 
+
+
+## Citation
+If you find this code useful, please cite our paper:
 ```
 @inproceedings{cho2023genb,
 	title={Generative Bias for Robust Visual Question Answering},
