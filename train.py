@@ -84,7 +84,7 @@ def train(model, genb, discriminator, train_loader, eval_loader,args,qid2type):
             g_distill = kld(pred_g, pred.detach())
             dsc_loss = bce(vae_preds, valid) + bce(main_preds, valid)
 
-            g_loss += (dsc_loss*5) + (g_distill*1)
+            g_loss += dsc_loss + g_distill*5
             g_loss.backward(retain_graph=True)
             nn.utils.clip_grad_norm_(genb.parameters(), 0.25)
             optim_G.step()
