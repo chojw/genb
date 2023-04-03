@@ -13,6 +13,14 @@ Install all requirements with ``pip install -r requirements.txt``
 
 Download UpDn features from [google drive](https://drive.google.com/drive/folders/1IXTsTudZtYLqmKzsXxIZbXfCnys_Izxr) into ``/data/detection_features`` folder
 
+Download questions/answers for VQA v2 and VQA-CP2 by executing ``bash tools/download.sh``
+
+Preprocess process the data with bash ``tools/process.sh``
+
+### Training
+
+Run ``python main.py`` to run the base model.
+
 
 
 
