@@ -9,9 +9,15 @@ Please make sure you are using a NVIDIA GPU with Python==3.7.1 and about 100 GB 
 Install all requirements with ``pip install -r requirements.txt``
 
 
+### Data Setup
+
+Download UpDn features from [google drive](https://drive.google.com/drive/folders/1IXTsTudZtYLqmKzsXxIZbXfCnys_Izxr) into ``/data/detection_features`` folder
+
+
+
 
 ## Acknowledgements
-We 
+This repo contains modified code from [here](https://github.com/GeraldHan/GGE).
 
 
 ## Citation
