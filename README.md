@@ -11,7 +11,7 @@ Install all requirements with ``pip install -r requirements.txt``
 
 ### Data Setup
 
-Download UpDn features from [google drive](https://drive.google.com/drive/folders/1IXTsTudZtYLqmKzsXxIZbXfCnys_Izxr) into ``/data/detection_features`` folder
+Download UpDn features from [google drive](https://drive.google.com/drive/folders/1IXTsTudZtYLqmKzsXxIZbXfCnys_Izxr), which is the link from [this repo](https://github.com/GeraldHan/GGE), into ``/data/detection_features`` folder
 
 Download questions/answers for VQA v2 and VQA-CP2 by executing ``bash tools/download.sh``
 
@@ -26,7 +26,7 @@ Run ``python main.py`` to run GenB.
 
 Run ``python eval.py --load_path DIRNAME`` to evaluate your model. 
 
-For the best performing model, you can download our best performing model from [here](https://aaa.com) and run it.
+For the best performing model, you can download our best performing model from [here](https://drive.google.com/drive/folders/1ujBnfmKHp2m9FDla2zkO-HrBowiLSJtk) and run it.
 
 
 
