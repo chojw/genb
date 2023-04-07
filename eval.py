@@ -75,7 +75,7 @@ def parse_args():
     parser.add_argument('--model', type=str, default='baseline0_newatt')
     parser.add_argument('--batch_size', type=int, default=512)
     parser.add_argument('--seed', type=int, default=1111, help='random seed')
-    parser.add_argument('--load_checkpoint_path', type=str, default='best_model')
+    parser.add_argument('--load_path', type=str, default='best_model')
     args = parser.parse_args()
     return args
 
@@ -96,11 +96,11 @@ def main():
     # Build the model using the original constructor
     constructor = 'build_%s' % args.model
     model = getattr(base_model, constructor)(eval_dset, args.num_hid).cuda()
-    
+
     with open('util/qid2type_%s.json'%args.dataset,'r') as f:
         qid2type=json.load(f)
 
-    ckpt = torch.load(os.path.join(args.load_checkpoint_path, 'model.pth'))
+    ckpt = torch.load(os.path.join(args.load_path, 'model.pth'))
     model.load_state_dict(ckpt)
     print('Loaded Model!')
 
