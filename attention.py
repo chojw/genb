@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 from torch.nn.utils.weight_norm import weight_norm
 from fc import FCNet
-from torch.nn import functional as F
 
 
 class Attention(nn.Module):
@@ -44,8 +43,6 @@ class NewAttention(nn.Module):
         q: [batch, qdim]
         """
         logits = self.logits(v, q)
-        # w = nn.functional.softmax(logits, 1)
-        # return w
         return logits
 
     def logits(self, v, q):
@@ -56,4 +53,3 @@ class NewAttention(nn.Module):
         joint_repr = self.dropout(joint_repr)
         logits = self.linear(joint_repr)
         return logits
-
