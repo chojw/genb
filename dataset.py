@@ -4,7 +4,6 @@ from __future__ import unicode_literals
 import os
 import json
 import pickle as cPickle
-from collections import Counter
 
 import numpy as np
 import utils
@@ -12,7 +11,6 @@ import h5py
 import torch
 from torch.utils.data import Dataset
 from tqdm import tqdm
-from random import choice
 
 from functools import partial
 import pickle
