@@ -3,7 +3,6 @@ from __future__ import print_function
 import errno
 import os
 import numpy as np
-# from PIL import Image
 import torch
 import torch.nn as nn
 import csv
