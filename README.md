@@ -19,13 +19,19 @@ Preprocess process the data with bash ``tools/process.sh``
 
 ### Training
 
-Run ``python main.py`` to run the base model.
+Run ``python main.py`` to run GenB.
 
+
+### Evaluating
+
+Run ``python eval.py --load_path DIRNAME`` to evaluate your model. 
+
+For the best performing model, you can download our best performing model from [here](https://aaa.com) and run it.
 
 
 
 ## Acknowledgements
-This repo contains modified code from [here](https://github.com/GeraldHan/GGE).
+This repo contains code largely modeified from [here](https://github.com/GeraldHan/GGE).
 
 
 ## Citation
