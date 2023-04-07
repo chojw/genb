@@ -1,14 +1,9 @@
 import argparse
 import json
-import pickle
-from collections import defaultdict, Counter
-from os.path import dirname, join
 import os
 
 import torch
-import torch.nn as nn
 from torch.utils.data import DataLoader
-import numpy as np
 
 from dataset import Dictionary, VQAFeatureDataset
 import base_model
@@ -62,13 +57,11 @@ def main():
 
     print("Building train dataset...")
     train_dset = VQAFeatureDataset('train', dictionary, dataset=dataset,
-                                #    cache_image_features=args.cache_features)
-                                cache_image_features=False)
+                                   cache_image_features=args.cache_features)
 
     print("Building test dataset...")
     eval_dset = VQAFeatureDataset('val', dictionary, dataset=dataset,
-                                #   cache_image_features=args.cache_features)
-                                cache_image_features=False)
+                                  cache_image_features=args.cache_features)
 
     # Build the model using the original constructor
     constructor = 'build_%s' % args.model
