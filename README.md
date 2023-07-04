@@ -11,7 +11,7 @@ Install all requirements with ``pip install -r requirements.txt``
 
 ### Data Setup
 
-Download UpDn features from [google drive](https://drive.google.com/drive/folders/1IXTsTudZtYLqmKzsXxIZbXfCnys_Izxr), which is the link from [this repo](https://github.com/GeraldHan/GGE), into ``/data/detection_features`` folder
+Download UpDn features from [google drive](https://drive.google.com/drive/folders/111ipuYC0BeprYZhHXLzkRGeYAHcTT0WR?usp=sharing), which is the link from [this repo](https://github.com/GeraldHan/GGE), into ``/data/detection_features`` folder
 
 Download questions/answers for VQA v2 and VQA-CP2 by executing ``bash tools/download.sh``
 
